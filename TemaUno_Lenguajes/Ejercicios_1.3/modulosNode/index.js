@@ -1,3 +1,7 @@
+/*
+Benito Santiago Balam Acevedo 
+modulosNode*/
+
 const fs = require('fs'); // Importa el módulo File System
 
 // Crear el archivo
@@ -13,4 +17,5 @@ fs.writeFile('archivo.txt', '¡Hola desde NodeJS!', (err) => {
     console.log('Contenido del archivo:');
     console.log(data);
   });
+
 });
