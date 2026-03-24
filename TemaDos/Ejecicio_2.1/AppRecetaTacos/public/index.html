@@ -1,0 +1,64 @@
+/*AA 2.1 API Reporte practico 
+BENITO SANTIAGO BALAM ACEVEDO*/
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TacosMx</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <h1>Tacoschidos 🌮</h1>
+    
+    <form id="Form" class="buttons">
+        <button type="button" data-type="Puerco">🐷</button>
+        <button type="button" data-type="Pollo">🐔</button>
+        <button type="button" data-type="Huevo">🥚</button>
+        <button type="button" data-type="Venado">🦌</button>
+    </form>
+
+    <div id="Container"></div>
+
+    <script>
+        const container = document.getElementById("Container");
+        const buttons = document.querySelectorAll("button");
+
+        // Función que hace la petición al servidor
+        async function mostrarReceta(type) {
+            try {
+                // Hacemos la petición fetch al endpoint que creaste en index.js
+                const response = await fetch(`/receta/${type}`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    container.innerHTML = `<p>${data.error}</p>`;
+                } else {
+                    // Inyectamos el HTML dinámico con los datos del JSON
+                    container.innerHTML = `
+                        <h2 style="color: #1a5276; margin-top: 20px;">${data.nombre}</h2>
+                        <h3 style="margin-top: 20px; font-weight: bold;">Ingredientes:</h3>
+                        <p>Carne de: ${data.ingredientes.proteina.nombre}, Modo preparación: ${data.ingredientes.proteina.preparacion}</p>
+                        <p>Salsa: ${data.ingredientes.salsa.nombre} (${data.ingredientes.salsa.picor})</p>
+                        ${data.ingredientes.acompañamientos.map(a => 
+                            `<p>Acompañamiento: ${a.cantidad} : ${a.nombre}</p>`
+                        ).join('')}
+                    `;
+                }
+            } catch (error) {
+                console.error("Error al obtener la receta:", error);
+            }
+        }
+
+        // Asignamos el evento 'mouseenter' a cada botón
+        buttons.forEach(button => {
+            button.addEventListener("mouseenter", () => {
+                const type = button.getAttribute("data-type");
+                mostrarReceta(type); // Llamamos a la función al pasar el mouse
+            });
+        });
+    </script>
+</body>
+</html>

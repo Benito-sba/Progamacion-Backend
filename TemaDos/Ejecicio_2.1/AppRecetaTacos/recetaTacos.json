@@ -1,0 +1,45 @@
+[
+  {
+    "id": "0001",
+    "tipo": "taco",
+    "nombre": "Taco lechon",
+    "ingredientes": {
+      "proteina": { "nombre": "Puerco", "preparacion": "Horneado" },
+      "salsa": { "nombre": "Tomate verde", "picor": "Medio" },
+      "acompañamientos": [
+        { "nombre": "Cebolla", "cantidad": "1 cucharada" },
+        { "nombre": "Guacamole", "cantidad": "2 cucharadas" }
+      ]
+    }
+  },
+  {
+    "id": "0002",
+    "tipo": "taco",
+    "nombre": "Taco de Pollo",
+    "ingredientes": {
+      "proteina": { "nombre": "Pollo", "preparacion": "A la plancha" },
+      "salsa": { "nombre": "Roja", "picor": "Alto" },
+      "acompañamientos": [{ "nombre": "Pico de gallo", "cantidad": "1 cucharada" }]
+    }
+  },
+  {
+    "id": "0003",
+    "tipo": "taco",
+    "nombre": "Taco de Huevo",
+    "ingredientes": {
+      "proteina": { "nombre": "Huevo", "preparacion": "Revuelto" },
+      "salsa": { "nombre": "Pasilla", "picor": "Bajo" },
+      "acompañamientos": [{ "nombre": "Frijoles", "cantidad": "1 cucharada" }]
+    }
+  },
+  {
+    "id": "0004",
+    "tipo": "taco",
+    "nombre": "Taco de Venado",
+    "ingredientes": {
+      "proteina": { "nombre": "Venado", "preparacion": "Pipil" },
+      "salsa": { "nombre": "Xnipec", "picor": "Extremo" },
+      "acompañamientos": [{ "nombre": "Cebolla morada", "cantidad": "2 cucharadas" }]
+    }
+  }
+]

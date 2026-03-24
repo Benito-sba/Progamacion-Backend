@@ -1,0 +1,96 @@
+{
+  "tacos": [
+    {
+      "id": "001",
+      "tipo": "taco",
+      "nombre": "Taco de cochinita pibil",
+      "precio": 25.00,
+      "ingredientes": {
+        "proteina": {
+          "nombre": "Cerdo",
+          "preparacion": "Adobado y horneado en hoja de plátano"
+        },
+        "salsa": {
+          "nombre": "Xnipec",
+          "picor": "Alto"
+        },
+        "acompanamientos": [
+          {
+            "nombre": "Cebolla morada",
+            "cantidad": "1 cucharada",
+            "ingredientes": ["Cebolla morada", "Naranja agria", "Sal"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "002",
+      "tipo": "taco",
+      "nombre": "Taco de lechón",
+      "precio": 22.00,
+      "ingredientes": {
+        "proteina": {
+          "nombre": "Cerdo",
+          "preparacion": "Horneado"
+        },
+        "salsa": {
+          "nombre": "Tomate verde",
+          "picor": "Medio"
+        },
+        "acompanamientos": [
+          {
+            "nombre": "Repollo",
+            "cantidad": "1/2 taza",
+            "ingredientes": ["Repollo", "Limón", "Sal"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "003",
+      "tipo": "taco",
+      "nombre": "Taco de pollo pibil",
+      "precio": 20.00,
+      "ingredientes": {
+        "proteina": {
+          "nombre": "Pollo",
+          "preparacion": "Adobado con achiote"
+        },
+        "salsa": {
+          "nombre": "Habanero",
+          "picor": "Muy alto"
+        },
+        "acompanamientos": [
+          {
+            "nombre": "Arroz",
+            "cantidad": "1/4 taza",
+            "ingredientes": ["Arroz", "Sal", "Aceite"]
+          }
+        ]
+      }
+    },
+    {
+      "id": "004",
+      "tipo": "taco",
+      "nombre": "Taco de pescado estilo Tikin Xic",
+      "precio": 30.00,
+      "ingredientes": {
+        "proteina": {
+          "nombre": "Pescado",
+          "preparacion": "Asado con achiote"
+        },
+        "salsa": {
+          "nombre": "Salsa de ajo",
+          "picor": "Bajo"
+        },
+        "acompanamientos": [
+          {
+            "nombre": "Ensalada",
+            "cantidad": "1/2 taza",
+            "ingredientes": ["Lechuga", "Tomate", "Pepino", "Limón"]
+          }
+        ]
+      }
+    }
+  ]
+}
