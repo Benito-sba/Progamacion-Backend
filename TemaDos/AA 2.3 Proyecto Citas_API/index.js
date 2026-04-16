@@ -38,7 +38,7 @@ app.get('/', async (req, res) => {
     }
 })
 
-// 6. ARANQUE DEL SERVIDOR
+// ARANQUE DEL SERVIDOR
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
 });
