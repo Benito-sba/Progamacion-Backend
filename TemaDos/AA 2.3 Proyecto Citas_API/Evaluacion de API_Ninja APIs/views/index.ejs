@@ -1,0 +1,38 @@
+    // Benito Santiago Balam Acevedo // API Ninja Evaluacion
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/main.css">
+  <title>Ficha Técnica de Moto</title>
+</head>
+<body>
+  <h1>Ficha Técnica de Moto</h1>
+
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url('<%= imagenUrl %>');">
+    <div class="info-panel">
+      <h2 class="modelo"><%= moto.model %></h2>
+      <p class="marca"><%= moto.make %></p>
+      
+      <div class="specs">
+        <div class="spec-item">
+          <span>Cilindraje:</span>
+          <strong><%= moto.displacement %></strong>
+        </div>
+        <div class="spec-item">
+          <span>Motor:</span>
+          <strong><%= moto.engine %></strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+</body>
+</html>
