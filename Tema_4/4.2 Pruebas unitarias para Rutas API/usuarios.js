@@ -7,7 +7,6 @@ import { jest } from '@jest/globals';
 const app = express();
 app.use(express.json());
 
-// Simulamos el Modelo de datos 
 export const Usuario = {
   find: jest.fn(),
   findById: jest.fn(),
